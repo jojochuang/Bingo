@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>文字賓果拉霸機</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>文字賓果拉霸機</h1>
+  <div id="menu"></div>
+  <h3>請點選要用的單字（最多 30 個）</h3>
+  <div id="word-pool"></div>
+  <h3>已選單字 (<span id="selected-count">0</span>/30)</h3>
+  <div id="selected-words"></div>
+  <div>
+    <label>生成賓果卡張數：
+      <input type="number" id="bingo-count" value="1" min="1" max="50" />
+    </label>
+    <button id="generate-bingo">產生賓果卡 PDF</button>
+  </div>
+  <div id="slot-machine">
+    <div id="slot-background"></div>
+    <div id="slot-display">請拉桿抽字</div>
+    <button id="slot-button">拉桿</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/hanzi-convert@1.0.7/lib/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script type="module" src="slot.js"></script>
+</body>
+</html>
