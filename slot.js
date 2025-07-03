@@ -1,4 +1,4 @@
-
+console.log('✅ slot.js loaded');
 import HanziConvert from 'https://cdn.jsdelivr.net/npm/hanzi-convert@1.0.7/lib/index.js';
 import { jsPDF } from 'https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js';
 
